@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/Link";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -14,6 +15,7 @@ export default function Home() {
 				your listed processing times. Accurate processing times can drive sales
 				and prevent cases by helping meet buyer expectations.
       </p> 
+      <Link href="/mario"> See more Listings </Link>
       <Footer />
 		</div>
 	);

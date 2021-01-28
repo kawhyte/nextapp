@@ -1,14 +1,15 @@
 import React from "react";
-
-function Navbar() {
+import Link from 'next/Link'
+const Navbar = () => {
 	return (
 		<nav>
 			<div className='logo'>
 				<h1>Mario List</h1>
 			</div>
-			<a>Home</a>
-			<a>About</a>
-			<a>Mario Listings</a>
+            	<Link href="/">Home </Link>
+            	<Link href="/about">About </Link>
+            	<Link href="/mario">Mario Listings </Link>
+
 		</nav>
 	);
 }
