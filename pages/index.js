@@ -1,14 +1,13 @@
 import Head from "next/head";
 import Link from "next/Link";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+
 
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
 	return (
 		<div>
-			<Navbar />
+		
 			<h1> Home Page</h1>
 			<p>
 				The time you've been taking to ship some of your items is different than
@@ -16,7 +15,7 @@ export default function Home() {
 				and prevent cases by helping meet buyer expectations.
       </p> 
       <Link href="/mario"> See more Listings </Link>
-      <Footer />
+      
 		</div>
 	);
 }
