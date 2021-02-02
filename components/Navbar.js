@@ -11,7 +11,7 @@ const Navbar = () => {
 			</div>
 			<Link href='/'>Home </Link>
 			<Link href='/about'>About </Link>
-			<Link href='/mario'>Zelda Listings </Link>
+			<Link href='/zelda'>Zelda Listings </Link>
 		</nav>
 	);
 };
