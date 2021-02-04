@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link"
 import style from "../../styles/Zelda.module.css";
 
 export const getStaticProps = async () => {
@@ -19,11 +19,11 @@ const Zelda = ({ zelda }) => {
 			<h1> All Zelda Characters</h1>
 
 			{zelda.map((zelda) => (
-				<div key={zelda.id}>
+				<Link href={`/zelda/${zelda.id}`} key={zelda.id}>
 					<a className={style.single}>
 						<p>{zelda.name}</p>
 					</a>
-				</div>
+				</Link>
 			))}
 		</div>
 	);
