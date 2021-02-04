@@ -1,35 +1,32 @@
-import React from 'react';
+import React from "react";
 
-import style from '../../styles/Zelda.module.css'
-
+import style from "../../styles/Zelda.module.css";
 
 export const getStaticProps = async () => {
- const response = await fetch('https://jsonplaceholder.typicode.com/users')
+	const response = await fetch("https://jsonplaceholder.typicode.com/users");
+	// const response = await fetch("http://zelda-api.apius.cc/api/games?limit=2");
+	console.log("response ", response);
+	const data = await response.json();
 
-const data = await response.json();
+	return {
+		props: { zelda: data },
+	};
+};
 
-return {
-    props:{zelda: data}
-}
+const Zelda = ({ zelda }) => {
+	return (
+		<div>
+			<h1> All Zelda Characters</h1>
 
+			{zelda.map((zelda) => (
+				<div key={zelda.id}>
+					<a className={style.single}>
+						<p>{zelda.name}</p>
+					</a>
+				</div>
+			))}
+		</div>
+	);
+};
 
-}
-
-const Zelda = ({zelda}) => {
-    return (
-        <div>
-           <h1> All Zelda Characters</h1> 
-
-            {zelda.map(zelda => (
-                <div key ={zelda.id}>
-                <a className={style.single}>
-                <p>{zelda.name}</p>
-                </a>
-                </div>
-
-            ))}
-        </div>
-    )
-}
-
-export default Zelda
+export default Zelda;
