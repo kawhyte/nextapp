@@ -2,7 +2,6 @@ export const getStaticPaths = async () => {
 	const response = await fetch("https://zelda-api.apius.cc/api/games");
 	const data = await response.json();
 
-
 	const paths = data.data.map((zelda) => {
 		
 		return {
