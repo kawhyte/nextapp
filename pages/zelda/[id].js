@@ -30,7 +30,6 @@ export const getStaticProps = async (context) => {
 };
 
 const Details = ({ zelda }) => {
-	console.log("This is the DETAILS",zelda)
 	return (
 		<div>
 			<h1>{zelda.data.name}</h1>
