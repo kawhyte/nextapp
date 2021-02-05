@@ -62,9 +62,11 @@ const Details = ({ zelda }) => {
 	return (
 		<div>
 			<h1>{zelda.data.name}</h1>
+			<h3>Description</h3>
 			<p>{zelda.data.description}</p>
-			<p>{zelda.data.developer}</p>
-			<p>{zelda.data.released_date}</p>
+			<p><span>Developer: </span> {zelda.data.developer}</p>
+			<p><span>Release date: </span> {zelda.data.released_date}</p>
+			<p></p>
 		</div>
 	);
 };
