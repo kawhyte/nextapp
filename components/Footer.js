@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
     return (
         <footer>
-            <p>Next App Tutorial </p>
+            <p>Zelda Next App Tutorial </p>
         </footer>
     )
 }

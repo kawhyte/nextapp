@@ -5,7 +5,7 @@ const About = () => {
 	return (
 		<>
 			<Head>
-				<title> Zelda List | About</title>
+				<title> Zelda Games | About</title>
 				<meta name='keywords' content='ninjas' />
 			</Head>
 			<div>
