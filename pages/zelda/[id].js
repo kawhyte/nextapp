@@ -1,5 +1,5 @@
 export const getStaticPaths = async () => {
-	const response = await fetch("https://zelda-api.apius.cc/api/games",
+	const response = await fetch("https://zelda-api.apius.cc/api/games?limit=15",
 	
 	{
         method: "GET",
